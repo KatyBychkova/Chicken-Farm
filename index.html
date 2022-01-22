@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chicken Farm</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/59cb049112.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+                <div class="header__container container">
+                    <div class="header__top-inner">
+                        <a class="header__top-adress" href="https://yandex.ru/maps/-/CCUy6SSj1B" target="_blank">
+                            Ростовcкая область, Неклиновский р-н
+                        </a>
+                        <a class="logo" href="index.html">
+                            <img class="logo__img" src="images/logo.png" alt="логотип">
+                        </a>
+                        <div class="header__top-contacts">
+                            <a class="header__top-email" href="mailto:needhelp@agrikol.com">
+                                needhelp@agrikol.com
+                            </a>
+                            <a class="header__top-tel" href="tel:666 888 0000">666 888 0000</a>
+                        </div>
+                    </div>
+
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="header__menu-item  topmenu">
+                            <a class="header__menu-link header__menu-link--active" href="products.html">Продукция</a>
+                            <ul class="header__submenu">
+                                <li>
+                                    <a href="cock.html">Петухи</a>
+                                </li>
+                                <li>
+                                    <a href="chickens.html">Курочки</a>
+                                </li>
+                                <li>
+                                    <a href="chick.html">Цыплята</a>
+                                </li>
+                                <li>
+                                    <a href="eggs.html">Яйца</a>
+                                </li>
+                                <li>
+                                    <a href="food.html">Корм</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="gallery.html">Галерея</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="care.html">Уход</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__menu-scroll-wrapper">
+                    <a class="logo logo--scroll" href="index.html">
+                        <img class="logo__img logo__img--scroll" src="images/logo-min.png" alt="логотип">
+                    </a>
+                    <nav class="header__menu-scroll">
+                        <button class="menu__btn">
+                            <span></span>
+                        </button>
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="index.html">Главная</a>
+                            </li>
+                            <li class="header__menu-item topmenu">
+                                <a class="header__menu-link" href="products.html">Продукция</a>
+                                <ul class="header__submenu submenu">
+                                    <li>
+                                        <a href="cock.html">Петухи</a>
+                                    </li>
+                                    <li>
+                                        <a href="chickens.html">Курочки</a>
+                                    </li>
+                                    <li>
+                                        <a href="chick.html">Цыплята</a>
+                                    </li>
+                                    <li>
+                                        <a href="eggs.html">Яйца</a>
+                                    </li>
+                                    <li>
+                                        <a href="food.html">Корм</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="gallery.html">Галерея</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="care.html">Уход</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__content header__bg">
+
+                <div class="header__background" style="background-image: url(images/header/chickens.jpg);">
+                </div>
+
+
+                <div class="header__content-inner container">
+                    <h3 class="header__content-subtitle">
+                        Вкуснейшее куриное мясо
+                    </h3>
+                    <h1 class="header__content-title">
+                        Добро пожаловать на куриную ферму
+                    </h1>
+                    <a class="header__content-link btn-link" href="#direction">
+                        Узнать больше
+                    </a>
+                </div>
+
+            </div>
+
+        </header>
+        <section class="direction section" id="direction">
+            <div class="direction__container container">
+                <h1 class="direction__title title">
+                    Услуги, которые мы предлагаем
+                </h1>
+
+                <div class="direction__items">
+
+                    <div class="direction__item">
+                        <div class="direction__item-content">
+                            <h4 class="direction__item-title">
+                                Продажа петухов
+                            </h4>
+                            <div class="direction__item-image">
+                                <img class="direction__item-img" src="images/direction/petuh.jpg" alt="фото петуха">
+                                <div class="direction__item-hover">
+                                    <a class="direction__item-hover-link" href="chick.html">
+                                        <i class="fas fa-arrow-right direction__item-hover-arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="direction__item">
+                        <div class="direction__item-content">
+                            <h4 class="direction__item-title">
+                                Продажа курочек
+                            </h4>
+
+                            <div class="direction__item-image">
+                                <img class="direction__item-img" src="images/direction/chickens.jpg" alt="фото курицы">
+                                <div class="direction__item-hover">
+                                    <a class="direction__item-hover-link" href="chickens.html">
+                                        <i class="fas fa-arrow-right direction__item-hover-arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="direction__item">
+                        <div class="direction__item-content">
+                            <h4 class="direction__item-title">
+                                Продажа куриных яиц </h4>
+
+                            <div class="direction__item-image">
+                                <img class="direction__item-img" src="images/direction/eggs.jpg" alt="фото яиц">
+                                <div class="direction__item-hover">
+                                    <a class="direction__item-hover-link" href="eggs.html">
+                                        <i class="fas fa-arrow-right direction__item-hover-arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="direction__item">
+                        <div class="direction__item-content">
+                            <h4 class="direction__item-title">
+                                Продажа цыплят</h4>
+
+                            <div class="direction__item-image">
+                                <img class="direction__item-img" src="images/direction/chick.jpg" alt="фото цыплят">
+                                <div class="direction__item-hover">
+                                    <a class="direction__item-hover-link" href="chick.html">
+                                        <i class="fas fa-arrow-right direction__item-hover-arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="direction__item">
+                        <div class="direction__item-content">
+                            <h4 class="direction__item-title">
+                                Продажа Комбикорма </h4>
+
+                            <div class="direction__item-image">
+                                <img class="direction__item-img" src="images/direction/food.jpg" alt="фото корма">
+                                <div class="direction__item-hover">
+                                    <a class="direction__item-hover-link" href="food.html">
+                                        <i class="fas fa-arrow-right direction__item-hover-arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="about section">
+            <div class="about__container  container">
+                <div class="about__inner">
+                    <div class="about__images">
+                        <div class="about__items">
+                            <div class="about__item-bg"></div>
+                            <img class="about__image-big" src="images/about/about-img-1.jpg" alt="изображение 1">
+                            <div class="about__imgbox">
+                                <img class="about__imgbox-img" src="images/about/about_logo.png" alt="иконка"></img>
+                            </div>
+                            <img class="about__image-small" src="images/about/about-img-2.jpg" alt="изображение 2">
+                        </div>
+                    </div>
+                    <div class="about__content">
+                        <h2 class="about__title title">О нас</h2>
+                        <div class="about__text">
+                            <p>
+                                Наше небольшое ЛПХ занимается пчеловодством и выведением только чистопородных кур
+                                мясояичного направления с высокой яйценоскостью и превосходными вкусовыми качествами
+                                мяса.
+                                Вся птица привезена яйцом из Франции и Германии.
+                            </p>
+                            <p>
+                                В нашем хозяйстве не используется наемный труд. Содержанием и уходом за птицей
+                                занимается
+                                только наша семья. Поэтому птица всегда здорова и весела.
+                            </p>
+                            <p>
+                                Ферма находится на участке площадью 50 соток, засеянным белым клевером, который в летнее
+                                время года используется только для пасеки и свободного выгула молодняка птицы.
+                            </p>
+
+                            <a class="about__text-link btn-link" href="#products">
+                                Узнать больше
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="sell section" id="products">
+            <div class="sell__container container">
+                <div class="sell__inner">
+                    <div class="sell__info">
+                        <h2 class="sell__title title">
+                            Реализация продукции
+                        </h2>
+                        <div class="sell__text">
+                            <ul class="sell__list">
+                                <li class="sell__list-item"> <span></span>с августа, сразу после выкачки, - мед
+                                    разнотравье
+                                </li>
+                                <li class="sell__list-item"> <span></span>с декабря - инкубационное яйцо </li>
+                                <li class="sell__list-item"> <span></span>с марта по май – семьи взрослой птицы;</li>
+                                <li class="sell__list-item"> <span></span>с октября – молодых петушков разных пород</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sell__image">
+                        <img class="sell__img" src="/images/sell/sell-bg.jpg" alt="картинка">
+
+                        <div class="dashed-logo__container">
+                            <div class="dashed-logo__circle">
+                                <span class="dashed-logo__img"></span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__top">
+                    <div class="footer__top-inner">
+
+                        <div class="footer__top-connection">
+                            <h5 class="footer__connection-title footer__title"> Остались вопросы? <span></span></h5>
+                            <form class="footer__connection-form" action="">
+                                <input type="text" placeholder="Имя">
+                                <input type="text" placeholder="E-mail">
+                                <textarea placeholder="Введите ваше сообщение"></textarea>
+                                <button class="button-form" type="submit">Отправить</button>
+                            </form>
+
+                        </div>
+
+                        <div class="footer__top-contacts">
+                            <h5 class="footer__contacts-title footer__title">Контакты <span></span></h5>
+                            <div class="footer__contacts-items">
+                                <a class="footer__contacts-adress"
+                                    href="https://yandex.ru/maps/geo/selo_fyodorovka/53163935/?from=mapframe&ll=38.381926%2C47.336147&z=15"
+                                    target="_blank"> Ростовская область, Неклиновский район, село Федоровка</a>
+                                <a class="footer__contacts-email" href="mailto:needhelp@agrikol.com">
+                                    needhelp@agrikol.com
+                                </a>
+                                <a class="footer__contacts-tel" href="tel:666 888 0000">666 888 0000</a>
+                            </div>
+                            <div class="footer__contacts-media">
+                                <p class="footer__contacts-list">
+
+                                    <a href="#" target="_blank">
+                                        <i class="fab fa-vk"></i>
+                                        <!-- <img src="images/footer/vk.svg" alt="логотbп вконтакте"> -->
+                                    </a>
+
+                                    <a href="https://wa.me/79115881001" target="_blank">
+                                        <i class="fab fa-whatsapp"></i>
+                                        <!-- <img src="images/footer/fontisto_whatsapp.svg" alt="логотип вотсап"> -->
+                                    </a>
+
+                                    <a href="viber://chat?number=%2B79115881001" target="_blank">
+                                        <i class="fab fa-viber"></i>
+                                        <!-- <img src="images/footer/viber.svg" alt="логотим вайбер"> -->
+                                    </a>
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="footer__top-navigation">
+                            <h5 class="footer__nav-title footer__title">Навигация <span></span></h5>
+                            <nav class="footer__nav">
+                                <ul class="footer__nav-list">
+                                    <li class="footer__nav-item">
+                                        <a class="footer__nav-link" href="#">Главная</a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a class="footer__nav-link" href="#">Продукция</a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a class="footer__nav-link" href="#">Галерея</a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a class="footer__nav-link" href="#">Уход</a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a class="footer__nav-link" href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="footer__copy">
+                <p>
+                    ©2021 Сайт Куриной фермы. Все права защищены. Разработка сайта <a class="copy-link"
+                        href="#">By_Kathy</a>.
+
+                </p>
+
+            </div>
+
+
+        </footer>
+
+        <span class="overlay"></span>
+    </div>
+    <a class="button-up" href="#body">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

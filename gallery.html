@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chicken Farm</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=IBM+Plex+Sans:wght@300;500;600&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/59cb049112.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+                <div class="header__container container">
+                    <div class="header__top-inner">
+                        <a class="header__top-adress" href="https://yandex.ru/maps/-/CCUy6SSj1B" target="_blank">
+                            Ростовcкая область, Неклиновский р-н
+                        </a>
+                        <a class="logo" href="index.html">
+                            <img class="logo__img" src="images/logo.png" alt="логотип">
+                        </a>
+                        <div class="header__top-contacts">
+                            <a class="header__top-email" href="mailto:needhelp@agrikol.com">
+                                needhelp@agrikol.com
+                            </a>
+                            <a class="header__top-tel" href="tel:666 888 0000">666 888 0000</a>
+                        </div>
+                    </div>
+
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="header__menu-item  topmenu">
+                            <a class="header__menu-link header__menu-link--active" href="products.html">Продукция</a>
+                            <ul class="header__submenu">
+                                <li>
+                                    <a href="cock.html">Петухи</a>
+                                </li>
+                                <li>
+                                    <a href="chickens.html">Курочки</a>
+                                </li>
+                                <li>
+                                    <a href="chick.html">Цыплята</a>
+                                </li>
+                                <li>
+                                    <a href="eggs.html">Яйца</a>
+                                </li>
+                                <li>
+                                    <a href="food.html">Корм</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="gallery.html">Галерея</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="care.html">Уход</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__menu-scroll-wrapper">
+                    <a class="logo logo--scroll" href="index.html">
+                        <img class="logo__img logo__img--scroll" src="images/logo-min.png" alt="логотип">
+                    </a>
+                    <nav class="header__menu-scroll">
+                        <button class="menu__btn">
+                            <span></span>
+                        </button>
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="index.html">Главная</a>
+                            </li>
+                            <li class="header__menu-item topmenu">
+                                <a class="header__menu-link" href="products.html">Продукция</a>
+                                <ul class="header__submenu submenu">
+                                    <li>
+                                        <a href="cock.html">Петухи</a>
+                                    </li>
+                                    <li>
+                                        <a href="chickens.html">Курочки</a>
+                                    </li>
+                                    <li>
+                                        <a href="chick.html">Цыплята</a>
+                                    </li>
+                                    <li>
+                                        <a href="eggs.html">Яйца</a>
+                                    </li>
+                                    <li>
+                                        <a href="food.html">Корм</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="gallery.html">Галерея</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="care.html">Уход</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+          
+
+        </header>
+
+        <section class="gallery section">
+            <div class="gallery__container container">
+
+                <div class="gallery__wrapper">
+                    <h1 class="gallery__title title"> Галерея </h1>
+                    <div class="gallery__filter">
+                        <button class="gallery__btn" data-filter="all">Все</button>
+                        <button class="gallery__btn" data-filter=".category-chicken">Курочки</button>
+                        <button class="gallery__btn" data-filter=".category-cock">Петушки</button>
+                        <button class="gallery__btn" data-filter=".category-chick">Цыплята</button>
+                        <button class="gallery__btn" data-filter=".category-eggs">Яйца</button>
+                        <button class="gallery__btn" data-filter=".category-food">Корм</button>
+                    </div>
+
+                    <div class="gallery__content row">
+                        <div class="mix category-chicken category-cock gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/1_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/1.jpg" alt="фото 1">
+                            </a>
+                        </div>
+                        <div class="mix category-chicken gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/2_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/2.jpg" alt="фото 2">
+                            </a>
+                        </div>
+                        <div class="mix category-chicken gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/3_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/3.jpg" alt="фото 3">
+                            </a>
+                        </div>
+                        <div class="mix category-eggs gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/4_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/4.jpg" alt="фото 4">
+                            </a>
+                        </div>
+                        <div class="mix category-chicken category-eggs gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/5_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/5.jpg" alt="фото 5">
+                            </a>
+                        </div>
+                        <div class="mix category-chicken gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/6_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/6.jpg" alt="фото 6">
+                            </a>
+                        </div>
+                        <div class="mix category-cock gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/7_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/7.jpg" alt="фото 7">
+                            </a>
+                        </div>
+                        <div class="mix category-chicken gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/8_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/8.jpg" alt="фото 8">
+                            </a>
+                        </div>
+                        <div class="mix category-chicken gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/9_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/9.jpg" alt="фото 9">
+                            </a>
+                        </div>
+                        <div class="mix category-eggs gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/10_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/10.jpg" alt="фото 10">
+                            </a>
+                        </div>
+                        <div class="mix category-eggs gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/11_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/11.jpg" alt="фото 11">
+                            </a>
+                        </div>
+                        <div class="mix category-cock gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/12_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/12.jpg" alt="фото 12">
+                            </a>
+                        </div>
+                        <div class="mix category-cock gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/13_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/13.jpg" alt="фото 13">
+                            </a>
+                        </div>
+                        <div class="mix category-chick gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/14_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/14.jpg" alt="фото 14">
+                            </a>
+                        </div>
+                        <div class="mix category-chicken gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/15_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/15.jpg" alt="фото 15">
+                            </a>
+                        </div>
+                        <div class="mix category-chicken gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/16_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/16.jpg" alt="фото 16">
+                            </a>
+                        </div>
+                        <div class="mix category-chicken gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/17_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/17.jpg" alt="фото 17">
+                            </a>
+                        </div>
+                        <div class="mix category-chicken gallery__item">
+                            <a class="gallery__foto-big" data-fancybox="gallery" href="images/gallery/18_big.jpg">
+                                <img class="gallery__foto-mini" src="images/gallery/18.jpg" alt="фото 18">
+                            </a>
+                        </div>
+                                            
+                  
+                </div>
+
+        </section>
+
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__top">
+                    <div class="footer__top-inner">
+
+                        <div class="footer__top-connection">
+                            <h5 class="footer__connection-title footer__title"> Остались вопросы? <span></span></h5>
+                            <form class="footer__connection-form" action="">
+                                <input type="text" placeholder="Имя">
+                                <input type="text" placeholder="E-mail">
+                                <textarea placeholder="Введите ваше сообщение"></textarea>
+                                <button class="button-form" type="submit">Отправить</button>
+                            </form>
+
+                        </div>
+
+                        <div class="footer__top-contacts">
+                            <h5 class="footer__contacts-title footer__title">Контакты <span></span></h5>
+                            <div class="footer__contacts-items">
+                                <a class="footer__contacts-adress"
+                                    href="https://yandex.ru/maps/geo/selo_fyodorovka/53163935/?from=mapframe&ll=38.381926%2C47.336147&z=15"
+                                    target="_blank"> Ростовская область, Неклиновский район, село Федоровка</a>
+                                <a class="footer__contacts-email" href="mailto:needhelp@agrikol.com">
+                                    needhelp@agrikol.com
+                                </a>
+                                <a class="footer__contacts-tel" href="tel:666 888 0000">666 888 0000</a>
+                            </div>
+                            <div class="footer__contacts-media">
+                                <p class="footer__contacts-list">
+                                   
+                                        <a href="#" target="_blank">
+                                            <i class="fab fa-vk"></i>
+                                            <!-- <img src="images/footer/vk.svg" alt="логотbп вконтакте"> -->
+                                        </a>
+                                   
+                                        <a href="https://wa.me/79115881001" target="_blank">
+                                            <i class="fab fa-whatsapp" ></i>
+                                            <!-- <img src="images/footer/fontisto_whatsapp.svg" alt="логотип вотсап"> -->
+                                        </a>
+                                    
+                                        <a href="viber://chat?number=%2B79115881001" target="_blank">
+                                            <i class="fab fa-viber"></i>
+                                            <!-- <img src="images/footer/viber.svg" alt="логотим вайбер"> -->
+                                        </a>
+                                    
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="footer__top-navigation">
+                            <h5 class="footer__nav-title footer__title">Навигация <span></span></h5>
+                            <nav class="footer__nav">
+                                <ul class="footer__nav-list">
+                                    <li class="footer__nav-item">
+                                        <a class="footer__nav-link" href="#">Главная</a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a class="footer__nav-link" href="#">Продукция</a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a class="footer__nav-link" href="#">Галерея</a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a class="footer__nav-link" href="#">Уход</a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a class="footer__nav-link" href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="footer__copy">
+                <p>
+                    ©2021 Сайт Куриной фермы. Все права защищены. Разработка сайта <a class="copy-link"
+                        href="#">By_Kathy</a>.
+
+                </p>
+
+            </div>
+
+
+        </footer>
+
+        <span class="overlay"></span>
+    </div>
+    <a class="button-up" href="#body">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Amatic SC';
+    src: url('AmaticSC-Bold.eot');
+    src: local('Amatic SC Bold'), local('AmaticSC-Bold'),
+        url('AmaticSC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AmaticSC-Bold.woff2') format('woff2'),
+        url('AmaticSC-Bold.woff') format('woff'),
+        url('AmaticSC-Bold.ttf') format('truetype'),
+        url('AmaticSC-Bold.svg#AmaticSC-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('IBMPlexSans-Light.eot');
+    src: local('IBM Plex Sans Light'), local('IBMPlexSans-Light'),
+        url('IBMPlexSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('IBMPlexSans-Light.woff2') format('woff2'),
+        url('IBMPlexSans-Light.woff') format('woff'),
+        url('IBMPlexSans-Light.ttf') format('truetype'),
+        url('IBMPlexSans-Light.svg#IBMPlexSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('IBMPlexSans-Medium.eot');
+    src: local('IBM Plex Sans Medium'), local('IBMPlexSans-Medium'),
+        url('IBMPlexSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('IBMPlexSans-Medium.woff2') format('woff2'),
+        url('IBMPlexSans-Medium.woff') format('woff'),
+        url('IBMPlexSans-Medium.ttf') format('truetype'),
+        url('IBMPlexSans-Medium.svg#IBMPlexSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('IBMPlexSans-SemiBold.eot');
+    src: local('IBM Plex Sans SemiBold'), local('IBMPlexSans-SemiBold'),
+        url('IBMPlexSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('IBMPlexSans-SemiBold.woff2') format('woff2'),
+        url('IBMPlexSans-SemiBold.woff') format('woff'),
+        url('IBMPlexSans-SemiBold.ttf') format('truetype'),
+        url('IBMPlexSans-SemiBold.svg#IBMPlexSans-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
