@@ -1340,7 +1340,7 @@ span.overlay--active {
   -o-transition: all 600ms ease;
   transition: all 600ms ease;
   position: fixed;
-  bottom: 100px;
+  bottom: 25px;
   right: 25px;
   z-index: 99;
   font-size: 14px;
@@ -1363,16 +1363,25 @@ span.overlay--active {
   text-align: center;
 }
 
+
 .chicken__about {
   text-align: left;
+  margin-bottom: 12px;
 }
 
 .chicken__about p {
   margin-bottom: 5px;
 }
 
-.chicken__about p:last-child {
-  margin-bottom: 25px;
+div.chicken__about:last-of-type {
+  margin-bottom: 35px;
+}
+
+.chicken__about-title{
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #404a3d;
 }
 
 .chicken__fotos {
@@ -2033,6 +2042,10 @@ span.overlay--active {
     width: 12px;
     height: 11px;
   }
+
+  .chicken__about-title {
+      font-size: 18px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -2043,12 +2056,6 @@ span.overlay--active {
     height: 270px;
   }
 
-  /* .header__content .header__background {
-    bottom: 0;
-      
-  } */
-
-
   .gallery__filter {
     margin-bottom: 16px;
   }
@@ -2058,9 +2065,14 @@ span.overlay--active {
     margin-right: 13px;
   }
 
-  .chicken__fotos-wrapper {
+  .chicken__fotos-wrapper, .chicken__fotos {
     display: none;
   }
+
+  .chicken__about {
+    margin-bottom: 24px;
+}
+
 }
 
 @media (max-width: 460px) {
