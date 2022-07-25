@@ -31,11 +31,11 @@ $(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() >= 190) {
             $('.header__menu-scroll-wrapper').addClass('stickytop');
-            
+
         }
         else {
             $('.header__menu-scroll-wrapper').removeClass('stickytop');
-           
+
         }
     });
 
@@ -46,14 +46,20 @@ $(function () {
     });
 
 
-    var mixer = mixitup('.gallery__content', {
-        animation: {
-            "duration": 200,
-            "nudge": true,
-            "reverseOut": false,
-            "effects": "scale(0.01) translateX(20%)"
-        }
-    });
+    var containerEl = document.querySelector('.gallery__content');
+    var mixer;
+
+
+    if (containerEl) {
+        mixer = mixitup(containerEl, {
+            animation: {
+                "duration": 200,
+                "nudge": true,
+                "reverseOut": false,
+                "effects": "scale(0.01) translateX(20%)"
+            }
+        });
+    }
 
 });
 
